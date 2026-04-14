@@ -54,6 +54,16 @@ Run the main training script:
 python src/main.py
 ```
 
+### Synthetic Data Generation (PaD-TS Diffusion)
+
+This repository now includes the PaD-TS diffusion pipeline under `pad_ts/` for synthetic time-series generation.
+
+Example:
+
+```bash
+python pad_ts/run.py -data drinkeat
+```
+
 ### Configuration
 
 Modify the parameters in `main.py` to configure:
@@ -79,6 +89,11 @@ Har_Classifier/
 │   ├── main.py               # Entry point script
 │   ├── models.py             # Neural network model definitions
 │   └── utils.py              # Utility functions for data processing and metrics
+├── pad_ts/                   # Imported PaD-TS diffusion module for synthetic data generation
+│   ├── run.py                # Main PaD-TS training/generation script
+│   ├── Model.py              # PaD-TS architecture
+│   ├── configs/              # Dataset and training configs for diffusion runs
+│   └── data_preprocessing/   # Data loaders and sampling utilities
 ├── requirements.txt          # Python dependencies
 ├── .gitignore               # Git ignore file
 ├── LICENSE                  # MIT License
