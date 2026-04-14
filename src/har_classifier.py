@@ -161,6 +161,7 @@ def clfOnlyTowers(directory, subdirectory, plots_loss_dir, data, obs, table,
 
     print(directory)
     print(subdirectory)
+    print("Model name: ", modelname)
 
 
 """
